@@ -6,6 +6,7 @@ import authRouter from './routes/auth.routes'
 import resourceRouter from './routes/resources.routes'
 import situationRouter from './routes/situation.routes'
 
+
 const app = express()
 
 //  MIDDLEWARES 
@@ -23,6 +24,9 @@ app.use("/api/auth", authRouter)
 app.use("/api/resources", resourceRouter)
 app.use("/api/situations", situationRouter)
 
+app.get("/health", (req, res) => {
+     res.status(200).json({status : "ok"})
+})
 
 
 export default app
