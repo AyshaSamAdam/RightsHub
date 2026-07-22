@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import helmet from 'helmet'
+import helmet from 'helmet' 
 import cookieParser from 'cookie-parser'
 import authRouter from './routes/auth.routes'
 import resourceRouter from './routes/resources.routes'
