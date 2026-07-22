@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./Backened
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./Backened/.env
+    
+  frontend:
+    build: ./Frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
