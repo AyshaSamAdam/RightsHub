@@ -40,7 +40,8 @@ export function AuthProvider({children}: {children: React.ReactNode}) {
                   
                     return getMeApi()
                 },
-                retry : false ,
+                retry : 1 ,
+                retryDelay : 2000,
                 refetchOnWindowFocus : false,
                 // WE GOT THSI ERROR WHEN FIRST TIME I TIED IN BROWSER IT WAS GETMEAPI EVERY TIME WE SWITCH TABS SO WE SET IT FALSE 
                 // authApi.ts:32  GET http://localhost:5000/api/auth/me 401 (Unauthorized)
