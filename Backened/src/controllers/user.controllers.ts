@@ -206,7 +206,7 @@ async function loginController(req: Request<{}, {}, LoginRequestBody>, res: Resp
         await redisClient.set(`rightshub:refreshToken:${refreshToken}`, user._id.toString(), { EX: 7 * 24 * 60 * 60 })
 
 
-
+// sks
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === "production",
