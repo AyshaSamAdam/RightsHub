@@ -619,8 +619,6 @@ async function resetPasswordController(req: Request, res : Response) {
 
 
 
-
-
 // THIS RUNS WHEN USER CLICKS ON CONTINUE WITH GOOGLE BUTTON 
 //  ALL T DOES IS SEND USER TO GOOGLE'S LOGIN PAGE 
 
@@ -732,10 +730,6 @@ async function googleCallBackController(req: Request, res : Response) {
       }
 
 }
-
-
-
-
 
 
 
